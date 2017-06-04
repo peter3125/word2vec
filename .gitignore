@@ -3,3 +3,6 @@ src/distance
 src/word-analogy
 src/word2phrase
 src/word2vec
+bin/*
+data/*
+
