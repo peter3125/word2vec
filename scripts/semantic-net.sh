@@ -12,7 +12,7 @@ pushd ${SRC_DIR} && make; popd
 if [ ! -e $VECTOR_DATA ]; then
   echo -----------------------------------------------------------------------------------------------------
   echo -- Training vectors...
-  time $BIN_DIR/word2vec -train $TEXT_DATA -output $VECTOR_DATA -cbow 0 -size 3 -window 3 -negative 0 -hs 1 -sample 1e-3 -threads 20 -binary 0
+  time $BIN_DIR/word2vec -train $TEXT_DATA -output $VECTOR_DATA -cbow 0 -size 3 -window 2 -negative 0 -hs 1 -sample 1e-3 -threads 20 -binary 0
 
 fi
 
